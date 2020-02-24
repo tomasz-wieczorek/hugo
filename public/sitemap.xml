@@ -3,31 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/bands/</loc>
+    <loc>https://hugo-jam.netlify.com/bands/</loc>
     <lastmod>2020-02-24T20:37:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/bands/metallica/</loc>
+    <loc>https://hugo-jam.netlify.com/bands/metallica-new/</loc>
     <lastmod>2020-02-24T20:37:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://hugo-jam.netlify.com/</loc>
     <lastmod>2020-02-24T20:37:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/bands/nirvana/</loc>
+    <loc>https://hugo-jam.netlify.com/bands/black/</loc>
     <lastmod>2019-04-04T18:55:31+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://hugo-jam.netlify.com/bands/nirvana/</loc>
+    <lastmod>2019-04-04T18:55:31+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://hugo-jam.netlify.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hugo-jam.netlify.com/tags/</loc>
   </url>
   
 </urlset>
