@@ -1,4 +1,4 @@
 baseURL = "https://hugo-jam.netlify.com/"
 languageCode = "en-us"
 title = "ta daa"
-theme = "ananke"
+theme = "raditian-free-hugo-theme"
