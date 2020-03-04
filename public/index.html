@@ -21,9 +21,9 @@
             dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
         j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', '');
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
 </script>
 
 
@@ -220,6 +220,12 @@
 </style>
 
 
+<link rel="stylesheet" href="https://hugo-jam.netlify.com/css/main.css"/>
+
+<link rel="stylesheet" href="https://hugo-jam.netlify.com/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://hugo-jam.netlify.com/css/custom.css"/>
+
 
     
 
@@ -232,8 +238,8 @@
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <a class="navbar-brand" href="https://hugo-jam.netlify.com/">
-        <span></span>
-        <span></span>
+        <span>Andreas</span>
+        <span>Ellure</span>
         
       </a>
       <button
@@ -252,6 +258,24 @@
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item">
             <a class="nav-link" href="https://hugo-jam.netlify.com/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >PORTFOLIO</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
           </li>
           
         </ul>
@@ -791,7 +815,7 @@
   <div class="container">
     <div class="footer__left">
       <div class="footer__copy">
-        
+        © Raditian. All rights reserved.
       </div>
     </div>
     <div class="footer__links">
@@ -800,14 +824,26 @@
           <a class="nav-link" href="/">HOME</a>
         </li>
         
+        <li class="nav-item">
+          <a class="nav-link" href="https://hugo-jam.netlify.com/">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://hugo-jam.netlify.com/">PORTFOLIO</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://hugo-jam.netlify.com/">CONTACT</a>
+        </li>
+        
       </ul>
     </div>
     <div class="footer__right">
       <a href="https://radity.com/"
         ><img
-          src="https://hugo-jam.netlify.com/"
-          srcset="https://hugo-jam.netlify.com/ 1x, https://hugo-jam.netlify.com/ 2x"
-          alt=""
+          src="https://hugo-jam.netlify.com/img/general/design-and-code-radity.png"
+          srcset="https://hugo-jam.netlify.com/img/general/design-and-code-radity.png 1x, https://hugo-jam.netlify.com/img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
       /></a>
     </div>
   </div>

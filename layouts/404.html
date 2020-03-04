@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -20,10 +20,10 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-XXXXXXX");
     </script>
-    
+    <!-- End Google Tag Manager -->
     <title>404 Page Not Found | Raditian</title>
     <style>
-       
+      /* Fade In animation triggering after font load or 3s timeout */
       .rad-fade-in {
         will-change: opacity, transform;
         animation-name: rad-fade-in-fallback;
@@ -66,7 +66,7 @@
         }
       }
 
-       
+      /* Fade In Long animation triggering after font load or 3s timeout */
       .rad-fade-in-long {
         will-change: opacity, transform;
         animation-name: rad-fade-in-long-fallback;
@@ -113,7 +113,7 @@
         }
       }
 
-       
+      /* Fade Down animation triggering after font load or 3s timeout */
       .rad-fade-down {
         will-change: opacity, transform;
         animation-name: rad-fade-down-fallback;
@@ -162,7 +162,7 @@
         }
       }
 
-       
+      /* Scale Down animation triggering after font load or 3s timeout */
       .rad-scale-down {
         will-change: opacity, transform;
         animation-name: rad-scale-down-fallback;
@@ -213,61 +213,12 @@
       }
     </style>
 
-    <link rel="stylesheet" href='https://hugo-jam.netlify.com/css/main.css' />
-    <link rel="stylesheet" href='https://hugo-jam.netlify.com/css/rad-icons.css' />
+    <link rel="stylesheet" href='{{ "css/main.css" | absURL }}' />
+    <link rel="stylesheet" href='{{ "css/rad-icons.css" | absURL }}' />
   </head>
 
   <body>
-    <header class="header fixed-top rad-animation-group" id="header">
-  <div class="container rad-fade-in">
-    <nav class="navbar navbar-expand-lg navbar-light p-0">
-      <a class="navbar-brand" href="https://hugo-jam.netlify.com/">
-        <span>Andreas</span>
-        <span>Ellure</span>
-        
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent, #header"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://hugo-jam.netlify.com/">HOME</a>
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#about"
-              >ABOUT</a
-            >
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#portfolio"
-              >PORTFOLIO</a
-            >
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#contact"
-              >CONTACT</a
-            >
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-
+    {{ partial "header.html" . }}
 
 
     <section class="section four-o-four">
@@ -277,101 +228,10 @@
         <p>
           Sorry, but the page you were looking for could not be found.
         </p>
-        <a href="https://hugo-jam.netlify.com/" class="btn btn-primary">Back to homepage</a>
+        <a href="{{ .Site.BaseURL | absURL }}" class="btn btn-primary">Back to homepage</a>
       </div>
     </section>
 
-    <footer class="footer">
-  <div class="container">
-    <div class="footer__left">
-      <div class="footer__copy">
-        © Raditian. All rights reserved.
-      </div>
-    </div>
-    <div class="footer__links">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://hugo-jam.netlify.com/">ABOUT</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://hugo-jam.netlify.com/">PORTFOLIO</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://hugo-jam.netlify.com/">CONTACT</a>
-        </li>
-        
-      </ul>
-    </div>
-    <div class="footer__right">
-      <a href="https://radity.com/"
-        ><img
-          src="https://hugo-jam.netlify.com/img/general/design-and-code-radity.png"
-          srcset="https://hugo-jam.netlify.com/img/general/design-and-code-radity.png 1x, https://hugo-jam.netlify.com/img/general/design-and-code-radity@2x.png 2x"
-          alt="Design &amp; Code - Radity"
-      /></a>
-    </div>
-  </div>
-</footer>
- <script src='https://hugo-jam.netlify.com/js/rad-animations.js'></script>
-<script src='https://hugo-jam.netlify.com/js/library/lozad.min.js'></script>
-<script>
-  window.addEventListener("load", function() {
-    var observer = window.lozad(".lozad", {
-      rootMargin: window.innerHeight / 2 + "px 0px",
-      threshold: 0.01
-    }); 
-    observer.observe();
-  });
-</script>
-<script src='https://hugo-jam.netlify.com/js/library/jquery-3.3.1.slim.min.js'></script>
-<script src='https://hugo-jam.netlify.com/js/library/bootstrap.min.js'></script>
-<script src='https://hugo-jam.netlify.com/js/sticky-header.js'></script>
-<script src='https://hugo-jam.netlify.com/js/library/smooth-scroll.polyfills.min.js'></script>
-<script src='https://hugo-jam.netlify.com/js/library/fontfaceobserver.js'></script>
-<script>
-  (function(w) {
-    
-    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
-      return;
-    }
-    var fontA = new w.FontFaceObserver("Inter", {
-      weight: 300
-    });
-    var fontB = new w.FontFaceObserver("Inter", {
-      weight: 400
-    });
-    var fontC = new w.FontFaceObserver("Inter", {
-      weight: 500
-    });
-    var fontD = new w.FontFaceObserver("Inter", {
-      weight: 600
-    });
-    var fontE = new w.FontFaceObserver("Inter", {
-      weight: 700
-    });
-    var fontF = new w.FontFaceObserver("Inter", {
-      weight: 900
-    });
-    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
-      w.document.documentElement.className += " fonts-loaded";
-    });
-  })(this);
-</script>
-<script>
-  const scroll = new SmoothScroll('a[href*="#"]');
-    $('a.nav-link').on('click', () => {
-      const navbar = $('.navbar-collapse');
-      if (navbar && navbar.hasClass('show')) {
-        $('.navbar-toggler').click();
-      }
-    })
-</script>
-
+    {{ partial "footer.html" . }} {{ partial "base-foot.html" . }}
   </body>
 </html>
