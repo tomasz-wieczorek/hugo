@@ -22,7 +22,6 @@ theme = "raditian-free-hugo-theme"
   [[params.plugins.js]]
   URL = "js/library/fontfaceobserver.js"
 
-
 # navigation
 [menu]
 
